@@ -23,7 +23,49 @@ h1 {
     font-weight: bold  !important ;
     color: #16342cf1 !important ; 
     margin-bottom: 50px  !important ;
+    font-size: 40px  !important;
 }
+
+
+.password-container {
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center; 
+}
+
+.password-container input {
+    width: 100%;
+    padding: 12px 15px;
+    padding-right: 45px; 
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15),
+                -4px -4px 6px rgba(255, 255, 255, 0.7);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 36%;
+    transform: translateY(-50%); 
+    cursor: pointer;
+    font-size: 22px; 
+    color: #949494;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px; 
+    width: 20px; 
+}
+
+.toggle-password:hover {
+    color: #16342cf1;
+}
+
 
 
 
@@ -64,6 +106,25 @@ input:focus {
                 inset -3px -3px 5px rgba(255, 255, 255, 0.7); 
     background: #EFEFEF;
 }
+
+
+.signup-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+.signup-link {
+    color: #16342cf1; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    color: #0c2e26; 
+}
+
 
 
 .sign-in {
