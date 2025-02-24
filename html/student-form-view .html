@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-form view</title>
+    <link rel="stylesheet" href="../css/student-form view .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="nav-icon home-icon">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <h1 class="logo">GroupGrade</h1>
+            <button id="user-btn" class="nav-icon profile-icon">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <p class="dropdown-user">User</p>
+                <hr>
+                <button class="logout-btn">
+                    <i class="fa-solid fa-right-to-bracket"></i> Log Out
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <h2>Peer Assessment Form</h2>
+        <h3>Module ABC<br>Assignment 2 - Group A</h3>
+        <p>Mark your peers from 0 to 5 based on these questions</p>
+        <table>
+            <tr>
+                <th>Evaluation [0-5]</th>
+                <th>Student A</th>
+                <th id="studentB">B</th>
+                <th id="studentC">C</th>
+                <th id="studentD">D</th>
+                <th id="studentE">E</th>
+            </tr>
+            <tr class="divider"></tr>
+            <tr>
+                <td><span class="number">1.</span> Contribution to Group Work</td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+            </tr>
+            <tr class="divider"></tr> 
+            <tr>
+                <td><span class="number">2.</span> Quality of Work Delivered</td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+            </tr>
+            <tr class="divider"></tr> 
+            <tr class="high-row">
+                <td><span class="number">3.</span> Collaboration and Communication</td>
+                <td><input type="number" min="0" max="5" class="score-input highlight"></td>
+                <td><input type="number" min="0" max="5" class="score-input highlight"></td>
+                <td><input type="number" min="0" max="5" class="score-input highlight"></td>
+                <td><input type="number" min="0" max="5" class="score-input highlight"></td>
+                <td><input type="number" min="0" max="5" class="score-input highlight"></td>
+            </tr>
+            <tr class="divider"></tr> 
+            <tr>
+                <td><span class="number">4.</span> Initiative and Problem-Solving</td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+            </tr>
+            <tr class="divider"></tr> 
+            <tr>
+                <td><span class="number">5.</span> Punctuality and Deadlines</td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+            </tr>
+            <tr class="divider"></tr> 
+            <tr>
+                <td><span class="number">6.</span> Overall Contribution</td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+                <td><input type="number" min="0" max="5" class="score-input"></td>
+            </tr>
+        </table>
+        <button class="submit-btn">Submit</button>
+    </div>
+
+    <script src="/js/student form view .js"></script>
+</body>
+</html>

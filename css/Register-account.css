@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3e3e3;
+    margin: 0;
+    font-family: "Georgia", serif;
+}
+
+
+.container {
+    background-color: white;
+    width: 700px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 
+                0px 4px 6px rgba(0, 0, 0, 0.15);  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.left-section,
+.right-section {
+    width: 45%;
+    position: relative;
+}
+
+
+.horizontal-line {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-bottom: 5px; 
+    color: #16342cf1;
+    font-size: 44px;
+}
+
+
+input {
+    width: 80%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #F5F5F5; 
+    border-radius: 20px; 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15), 
+                -4px -4px 6px rgba(255, 255, 255, 0.7); 
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2),
+                inset -3px -3px 5px rgba(255, 255, 255, 0.7); 
+    background: #EFEFEF;
+}
+
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #16342cf1;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+
+button {
+    display: block;
+    margin: 20px auto; 
+    background-color: #16342cf1;
+    color: white;
+    padding: 10px 48px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0c2e26;
+}
+
+
+.divider {
+    width: 1px;
+    background-color: #1a4439f1;
+    height: 90%; 
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher-Create-Submission</title>
+    <link rel="stylesheet" href="../css/Teacher-Create-Submission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="nav-icon home-icon">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <h1 class="logo">GroupGrade</h1>
+            <button id="user-btn" class="nav-icon profile-icon">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <p class="dropdown-user">User</p>
+                <hr>
+                <button class="logout-btn">
+                    <i class="fa-solid fa-right-to-bracket"></i> Log Out
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <h1>Create Submission</h1>
+        
+        <div class="form-group">
+            <label>Module Name:</label>
+            <input type="text">
+        </div>
+        
+        <div class="form-group">
+            <label>Assignment Name:</label>
+            <input type="text">
+        </div>
+        
+        <div class="form-group">
+            <label>Group Name:</label>
+            <input type="text">
+        </div>
+    
+        <h2 class="add-students-heading">Add Students</h2>
+<p>Search for students using their Student ID number</p>
+
+    
+<div class="form-group">
+    <label>Student 1 :</label>
+    <input type="text" class="studentSearch" placeholder="Enter Student ID or Name">
+    <ul class="studentList"></ul>
+</div>
+
+<div class="form-group">
+    <label>Student 2 :</label>
+    <input type="text" class="studentSearch" placeholder="Enter Student ID or Name">
+    <ul class="studentList"></ul>
+</div>
+
+<div class="form-group">
+    <label>Student 3 :</label>
+    <input type="text" class="studentSearch" placeholder="Enter Student ID or Name">
+    <ul class="studentList"></ul>
+</div>
+
+<div class="form-group">
+    <label>Student 4 :</label>
+    <input type="text" class="studentSearch" placeholder="Enter Student ID or Name">
+    <ul class="studentList"></ul>
+</div>
+
+<div class="form-group">
+    <label>Student 5 :</label>
+    <input type="text" class="studentSearch" placeholder="Enter Student ID or Name">
+    <ul class="studentList"></ul>
+</div>
+
+    
+        <button class="submit-btn">Create and Send</button>
+    </div>
+   <script src="/js/submission form.js"></script>
+</body>
+</html>
