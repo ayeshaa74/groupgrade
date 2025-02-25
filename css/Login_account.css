@@ -10,64 +10,14 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    align-items: stretch; 
+    justify-content: space-between;
     width: 50%;
     background: white;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-h1 {
-    font-weight: bold  !important ;
-    color: #16342cf1 !important ; 
-    margin-bottom: 50px  !important ;
-    font-size: 40px  !important;
-}
-
-
-.password-container {
-    position: relative;
-    width: 80%;
-    display: flex;
-    align-items: center; 
-}
-
-.password-container input {
-    width: 100%;
-    padding: 12px 15px;
-    padding-right: 45px; 
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background: #F5F5F5;
-    border-radius: 20px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15),
-                -4px -4px 6px rgba(255, 255, 255, 0.7);
-}
-
-.toggle-password {
-    position: absolute;
-    right: 15px;
-    top: 36%;
-    transform: translateY(-50%); 
-    cursor: pointer;
-    font-size: 22px; 
-    color: #949494;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px; 
-    width: 20px; 
-}
-
-.toggle-password:hover {
-    color: #16342cf1;
-}
-
-
-
 
 .login-box {
     display: flex;
@@ -76,9 +26,10 @@ h1 {
     width: 50%;
 }
 
-.login-box h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+.login-box h1{
+    font-size: 40px;
+    color: #16342cf1;
 }
 
 label {
@@ -88,48 +39,43 @@ label {
 }
 
 input {
-    width: 80%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    font-size: 16px;
+    width: 100%; 
+    max-width: 100%;
+    box-sizing: border-box; 
+    padding: 12px 15px; 
     border: none;
     outline: none;
-    background: #F5F5F5; 
-    border-radius: 20px; 
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15), 
-                -4px -4px 6px rgba(255, 255, 255, 0.7); 
-    transition: all 0.3s ease-in-out;
+    background: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: none; 
+}
+.password-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.password-container input {
+    width: 100%; 
+    padding-right: 45px; 
 }
 
-input:focus {
-    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2),
-                inset -3px -3px 5px rgba(255, 255, 255, 0.7); 
-    background: #EFEFEF;
+.toggle-password {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 22px;
+    color: #949494;
 }
-
-
-.signup-text {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 10px;
-    color: #333;
+.toggle-password:hover {
+    color: #16342cf1;
 }
-
-.signup-link {
-    color: #16342cf1; 
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.signup-link:hover {
-    color: #0c2e26; 
-}
-
-
 
 .sign-in {
     display: block;
-    margin: 20px auto; 
+    margin: 20px auto;
     background-color: #16342cf1;
     color: white;
     padding: 10px 48px;
@@ -145,26 +91,29 @@ input:focus {
     background-color: #0c2e26;
 }
 
-.divider {
-    width: 1px; 
-    background-color: #215346f1;
-    height: 70%; 
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    transform: translateX(-50%);
+.signup-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
 }
 
-
-.image-container img {
-    max-width: 300px; 
-    height: auto;
-}
-
-
-h2{
-    font-size: 40px;
+.signup-link {
     color: #16342cf1;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    color: #0c2e26;
+}
+
+
+.divider {
+    width: 1px;
+    background-color: #215346f1;
+    height: auto;
+    align-self: stretch;
 }
 
 
@@ -182,4 +131,92 @@ h2{
     max-width: 80%;
     height: auto;
     object-fit: contain;
+}
+
+h2{
+    color: #16342cf1;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column; 
+        width: 90%; 
+        padding: 20px;
+    }
+
+    .login-box, .illustration-box {
+        width: 100%; 
+       
+    }
+
+    .divider {
+        display: none; 
+    }
+
+    .illustration-box img {
+        max-width: 60%; /
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .login-box, .illustration-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    .login-box {
+        width: 100%; 
+    }
+    
+    input, .password-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .divider {
+        display: none; 
+    }
+
+    input {
+        width: 100%; 
+        max-width: 100%; 
+    }
+    
+    .password-container {
+        width: 100%; 
+    }
+
+    .sign-in {
+        width: 100%;
+    }
+
+    .illustration-box img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .sign-in {
+        font-size: 16px;
+        padding: 8px 30px;
+    }
 }
