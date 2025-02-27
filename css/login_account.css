@@ -10,20 +10,27 @@ body {
 
 .container {
     display: flex;
-    align-items: stretch; 
-    justify-content: space-between;
+    align-items: center; 
+    justify-content: center;
     width: 50%;
     background: white;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
+
+
 
 .login-box {
     display: flex;
     flex-direction: column;
     padding: 20px;
     width: 50%;
+    align-items: center;
 }
 
 
@@ -32,25 +39,40 @@ body {
     color: #16342cf1;
 }
 
-label {
-    font-size: 14px;
-    margin: 5px 0;
-    color: #16342cf1;
+.login-box label {
+    display: block; 
+    text-align: left; 
+    font-weight: normal; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%;
+    margin-bottom: 6px;
 }
 
 input {
-    width: 100%; 
-    max-width: 100%;
+    width: 80%; 
     box-sizing: border-box; 
     padding: 12px 15px; 
     border: none;
     outline: none;
     background: #F5F5F5;
+    margin-bottom: 6px;
     border-radius: 20px;
-    box-shadow: none; 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15), 
+    -4px -4px 6px rgba(255, 255, 255, 0.7); 
+transition: all 0.3s ease-in-out;
 }
+
+
+input:focus {
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2),
+                inset -3px -3px 5px rgba(255, 255, 255, 0.7); 
+    background: #EFEFEF;
+}
+
+
 .password-container {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     position: relative;
@@ -74,22 +96,29 @@ input {
 }
 
 .sign-in {
-    display: block;
-    margin: 20px auto;
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 0; 
     background-color: #16342cf1;
     color: white;
-    padding: 10px 48px;
+    padding: 10px 0;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 18px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .sign-in:hover {
     background-color: #0c2e26;
 }
+
+
+
 
 .signup-text {
     font-size: 14px;
