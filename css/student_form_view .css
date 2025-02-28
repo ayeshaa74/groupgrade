@@ -183,14 +183,6 @@ th, td {
 }
 
 
-.high-row td {
-    height: 50px !important; 
-    line-height: 2; 
-    vertical-align: middle; 
-    font-size: 22px; 
-    font-weight: bold; 
-}
-
 
 th:last-child, td:last-child {
     border-right: 2px solid black;
