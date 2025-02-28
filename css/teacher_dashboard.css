@@ -1,15 +1,15 @@
 body {
     font-family: "Georgia", serif;
-    background-color: #e0e0e0;
     margin: 0;
     padding: 0;
+    background-color: #fff; 
 }
 
 .navbar {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: #555555;
+    background-color: #19443C; 
     color: #F3F3E4; 
     padding: 10px 10px;
     font-size: 22px;
@@ -74,7 +74,7 @@ h1 {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #555555;
+    background-color: #19443C; 
     color: #F3F3E4; 
     border-radius: 12px;
     padding: 12px;
@@ -101,7 +101,7 @@ h1 {
 .dropdown-menu hr {
     border: 0;
     height: 1px;
-    background-color: #ffffff60;
+    background-color: #19443C; 
     margin: 6px 0;
 }
 
@@ -124,8 +124,126 @@ h1 {
 }
 
 
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    position: relative;
+}
 
-.container {
+.create-btn {
+    background-color: #19443C; 
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    margin-bottom: 10px;  /* Adds space below the button */
+}
+
+.create-btn:hover {
+    background-color: #14352f;
+}
+
+section h2 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    color: #19443C; 
+}
+
+section h3 {
+    color: #19443C; 
+}
+
+section p {
+    color: #19443C; 
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff; 
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.313);
+    text-align: center;
+    width: 280px;
+    margin: auto;
+}
+
+p{
+    font-size: 20px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.view-btn {
+    background-color: #19443C; 
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.view-btn:hover {
+        background-color: #14352f;
+}
+
+
+.embossed-btn {
+    background: #fff; 
+    color: #F3F3E4; 
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    margin: 20px auto;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.embossed-btn:hover,
+.embossed-btn:active {
+    background: #fff;
+}
+
+
+
+
+
+
+/* .container {
     max-width: 1000px; 
     margin: auto;
     padding: 20px;
@@ -156,7 +274,7 @@ h1 {
 }
 
 .create-btn {
-    background: #28a745; 
+    background-color: #19443C; 
     color: white;
     border: none;
     padding: 9px 20px;
@@ -169,7 +287,7 @@ h1 {
 }
 
 .create-btn:hover {
-    background: #218838;
+    background-color: #13322c; 
 }
 
 
@@ -205,7 +323,7 @@ h1 {
 }
 
 .card button {
-    background: #555555;
+    background-color: #19443C; 
     color: white;
     border: none;
     padding: 8px 20px;
@@ -216,25 +334,25 @@ h1 {
 }
 
 .card button:hover {
-    background: #2b2b2b;
+    background-color: #13322c; 
 }
 
 .placeholder {
-    background: #d3d3d3;  /* Light gray background */
-    color: #b7b7b7;  /* Light gray text */
+    background: #d3d3d3; 
+    color: #b7b7b7;  
     text-align: center;
-    min-height: 150px;  /* Adjust height to match the image */
+    min-height: 150px;  
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 32px;  /* Bigger text */
-    font-family: "Georgia", serif; /* Matches your previous font */
+    font-size: 32px; 
+    font-family: "Georgia", serif; 
     border-radius: 10px;
-    text-transform: capitalize; /* Keeps 'GroupGrade' formatted properly */
-    letter-spacing: 1px; /* Adds spacing for a more elegant look */
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
-}
+    text-transform: capitalize; 
+    letter-spacing: 1px; 
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); 
+} */
 
 
 

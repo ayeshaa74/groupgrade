@@ -1,92 +1,128 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
+    font-family: "Georgia", serif;
     margin: 0;
     padding: 0;
+    background-color: #fff; 
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    background-color: #555555;
-    padding: 0 20px;
-    color: white;
-    font-family: Arial, sans-serif;
-    position: relative;
-    height: 60px;
-}
-
-.logo {
-    font-size: 35px;
+    background-color: #19443C; 
+    color: #F3F3E4; 
+    padding: 10px 10px;
+    font-size: 22px;
     font-weight: bold;
+    height: 40px;
+    position: relative;
+}
+
+.welcome {
+    margin-left: 20px; 
+    font-size: 18px;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.user-menu {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999; 
 }
 
 
-.nav-icon {
+
+#user-btn {
     background: none;
     border: none;
-    color: white;
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.profile-icon {
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-#user-btn {
-    width: 35px; 
-    height: 35px;
-    border: 2px solid white; 
-    border-radius: 8px; 
-    padding: 5px;
+.profile-icon i {
+    font-size: 20px;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 40%;
+    border: 2px solid #E3E3C4; 
+    color: #E3E3C4;
 }
-
 
 .dropdown-menu {
-    display: none;
     position: absolute;
-    right: 10px;
-    top: 70px;
-    background-color: #555555;
-    color: white;
+    top: 60px;
+    right: 0;
+    background-color: #19443C; 
+    color: #F3F3E4; 
+    border-radius: 12px;
     padding: 12px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    min-width: 90px;
+    width: 90px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
     text-align: center;
+    z-index: 99999; 
 }
 
 
-.dropdown-menu.active {
-    display: block;
+.dropdown-menu::before {
+    content: none;
 }
 
 
 .dropdown-user {
     font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 15px;
+    margin-bottom: 6px;
 }
 
 
-hr {
+.dropdown-menu hr {
     border: 0;
-    border-top: 1px solid white;
-    margin: 5px 0;
+    height: 1px;
+    background-color: #19443C; 
+    margin: 6px 0;
 }
 
 .logout-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #F3F3E4; 
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
 }
+
+.logout-btn i {
+    font-size: 14px;
+    color: beige;
+}
+
 
 .container {
     background: #d9d9d9;
@@ -224,12 +260,17 @@ button.submit-btn {
     margin-top: 5px; 
     padding: 8px 20px;
     border-radius: 10px;
-    background-color: #28a745;
+    background-color: #19443C; 
     color: white;
     font-weight: bold;
     border: none;
     cursor: pointer;
 }
+
+button.submit-btn:hover {
+    background-color: #14352f; 
+}
+
 
 #student-grades {
     margin-top: 5px; 

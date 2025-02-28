@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>  
-
-    <nav class="navbar">
-        <div class="welcome">Welcome, User</div>
-        <h1>GroupGrade</h1>
-        <div class="profile-icon" onclick="toggleDropdown()">
-            <i class="fa fa-user"></i>
-            <div class="dropdown-menu" id="dropdownMenu">
-                <p class="user-text">User</p>
-                <hr>
-                <a href="#" class="logout">
-                    <i class="fa fa-sign-out"></i> Log Out
-                </a>
+    
+    <header>
+        <div class="navbar">
+            <h1>GroupGrade</h1>
+            <div class="welcome">Welcome, User</div>
+            <div class="user-menu">
+                <button id="user-btn" class="profile-icon">
+                    <i class="fa-solid fa-user"></i> 
+                </button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <p class="dropdown-user">User</p>
+                    <hr>
+                    <button class="logout-btn">
+                        <i class="fa-solid fa-right-to-bracket"></i> Log Out
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
     
     <main>
         <section>

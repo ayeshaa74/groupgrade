@@ -1,93 +1,128 @@
-body, html {
+body {
     font-family: "Georgia", serif;
-    background-color: #d3d3d3;
-    text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    background-color: #fff; 
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    background-color: #555555;
-    padding: 0 20px;
-    color: white;
-    font-family: Arial, sans-serif;
-    position: relative;
-    height: 60px;
-}
-
-.logo {
-    font-size: 35px;
+    background-color: #19443C; 
+    color: #F3F3E4; 
+    padding: 10px 10px;
+    font-size: 22px;
     font-weight: bold;
+    height: 40px;
+    position: relative;
+}
+
+.welcome {
+    margin-left: 20px; 
+    font-size: 18px;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.user-menu {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999; 
 }
 
 
-.nav-icon {
+
+#user-btn {
     background: none;
     border: none;
-    color: white;
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.profile-icon {
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-#user-btn {
-    width: 35px; 
-    height: 35px;
-    border: 2px solid white; 
-    border-radius: 8px; 
-    padding: 5px;
+.profile-icon i {
+    font-size: 20px;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 40%;
+    border: 2px solid #E3E3C4; 
+    color: #E3E3C4;
 }
-
 
 .dropdown-menu {
-    display: none;
     position: absolute;
-    right: 10px;
-    top: 70px;
-    background-color: #555555;
-    color: white;
+    top: 60px;
+    right: 0;
+    background-color: #19443C; 
+    color: #F3F3E4; 
+    border-radius: 12px;
     padding: 12px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    min-width: 90px;
+    width: 90px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
     text-align: center;
+    z-index: 99999; 
 }
 
 
-.dropdown-menu.active {
-    display: block;
+.dropdown-menu::before {
+    content: none;
 }
 
 
 .dropdown-user {
     font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 15px;
+    margin-bottom: 6px;
 }
 
 
-hr {
+.dropdown-menu hr {
     border: 0;
-    border-top: 1px solid white;
-    margin: 5px 0;
+    height: 1px;
+    background-color: #19443C; 
+    margin: 6px 0;
 }
 
 .logout-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #F3F3E4; 
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
 }
+
+.logout-btn i {
+    font-size: 14px;
+    color: beige;
+}
+
 .container {
     width: 50vw;
     max-width: 600px;
@@ -102,12 +137,29 @@ hr {
     align-items: center; 
 }
 
+.container h1:first-child {
+    align-self: center;
+}
+
+
+.submission-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative; 
+    z-index: 1; 
+}
+
+
 label {
     white-space: nowrap;
 }
 
 
-h1, h2 {
+ h2 {
     font-size: 44px;
     font-weight: bold;
 }
@@ -144,6 +196,7 @@ label {
     justify-content: center; 
     width: 100%; 
     max-width: 400px; 
+    position: relative;
 }
 
 .form-group label {
@@ -155,6 +208,32 @@ label {
     width: 100%; 
     max-width: 250px; 
 }
+
+
+.studentList {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%;
+    display: none;
+}
+
+.studentList li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.studentList li:hover {
+    background-color: #f0f0f0;
+}
+
+
 
 
 input {
@@ -169,7 +248,7 @@ input {
 
 
 .submit-btn {
-    background-color: #28A745; 
+    background-color: #19443C; 
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -182,17 +261,21 @@ input {
     text-align: center; 
 }
 
+.submit-btn:hover {
+    background-color: #14352f; 
+}
+
+
 .studentList {
-    list-style: none;
-    padding: 0;
-    margin: 5px 0 0;
+    position: absolute;
+    top: 100%;  /* Moves dropdown directly below input */
+    left: 0;
+    width: 100%;
     border: 1px solid #ccc;
     background: white;
     max-height: 150px;
     overflow-y: auto;
     display: none;
-    position: absolute;
-    width: 250px;
     z-index: 10;
 }
 
